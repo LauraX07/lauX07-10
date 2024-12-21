@@ -1,0 +1,90 @@
+/* Estilos básicos */
+body {
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #EEEAE7;
+}
+
+h3 {
+  color: #6A0241;
+  text-align: center;
+}
+
+input[type="file"] {
+  margin-top: 20px;
+}
+
+button {
+  font-size: 1rem;
+  margin-top: 10px;
+  background-color: #B9906B;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #A67F5A;
+}
+
+.img {
+  align-items: center;
+  display: block;
+  width: 110%;
+  margin: 0px;
+}
+
+/* Galeria */
+.gallery {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Espaço entre as imagens */
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.uploaded-image {
+  max-width: 100%; /* Garante que a imagem não ultrapasse a largura do container */
+  border: 2px solid #B9906B;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.delete-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #FF6B6B;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.delete-button:hover {
+  background-color: #FF4C4C;
+}
+
+/* Responsivo */
+@media screen and (max-width: 500px) {
+  .img {
+    width: 110%;
+    margin: -5%;
+  }
+
+  h3 {
+    margin-top: 35%;
+    font-size: 1.5rem;
+  }
+}
