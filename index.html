@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M&G</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <img src="./img/may.jpg" class="img" alt="Imagem de destaque">
+  <h3>Compartilhe aqui suas fotos <br> desse dia tão lindo e especial!</h3>
+
+  <!-- Formulário para upload -->
+  <form id="uploadForm">
+    <input type="file" id="photoInput" accept="image/*" multiple required>
+    <button type="submit">Enviar Fotos</button>
+  </form>
+
+  <!-- Galeria de fotos -->
+  <div id="gallery" class="gallery"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
